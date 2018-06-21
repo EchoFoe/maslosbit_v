@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="container-table">
+    <div class="container">
+        <div class="row">
+            <article class="bg-secondary mb-3">
+                <div class="card-body text-center">
+                    <p class="h5 text-white"></p>
+                    <hr>
+                    <p class="h5 text-white">Персональный менеджер поможет выбрать из множества наименований продукцию необходимую именно Вам и организовать доставку. По вопросам обращайтесь в отдел продаж по телефонам:</p>
+                    <p class="h5 text-white">8(4712) 32-47-31</p>
+                    <p class="h5 text-white">8(4712) 32-62-54</p>
+                    <p class="h5 text-white">8(4712) 32-66-17</p>
+                    <hr>
+                    <p class="h5 text-white">Или напишите на нашу почту. С Вами обязательно свяжется наш сотрудник:</p>
+                    <p class="h5 text-white">oil.sv@yandex.ru</p>
+                </div>
+            </article>
+            <br>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">№ п/п</th>
+                    <th scope="col">Наименование бензовоза</th>
+                    <th scope="col">Объем общий, л.</th>
+                    <th scope="col">Объем (секция №1), л.</th>
+                    <th scope="col">Объем (секция №2), л.</th>
+                    <th scope="col">Объем (секция №3), л.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">1</th>
+                    <td>ГАЗ</td>
+                    <td>5354</td>
+                    <td>2667</td>
+                    <td>2687</td>
+                    <td>-</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">2</th>
+                    <td>МАЗ</td>
+                    <td>19895</td>
+                    <td>10593</td>
+                    <td>9302</td>
+                    <td>-</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">3</th>
+                    <td>МАЗ</td>
+                    <td>23330</td>
+                    <td>8050</td>
+                    <td>7640</td>
+                    <td>7640</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

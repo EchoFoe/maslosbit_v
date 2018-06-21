@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Exo+2');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Didact+Gothic|EB+Garamond|Gabriela|Jura|Lobster|Montserrat|Montserrat+Alternates|Old+Standard+TT|Oswald|Pattaya|Playfair+Display|Playfair+Display+SC|Roboto+Slab');
+
+body{
+    background-color: rgba(0, 223, 157, 0.2);
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.navbar{
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

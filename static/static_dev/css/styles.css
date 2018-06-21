@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|IBM+Plex+Sans|Josefin+Sans|Marck+Script|Monofett|Muli|Philosopher|Poiret+One|Shadows+Into+Light|Source+Serif+Pro|Special+Elite|Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+/*Тело сайта*/
+body{
+    background-color: rgba(225, 225, 225, 0.11);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    /*color: rgba(113, 55, 55, 0.06);*/
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+/*Верхний отступ для НавБара*/
+.wrapper{
+    margin-top: -100px;
+}
+/*Трансформ объектов*/
+.tilt{
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+.tilt:hover{
+    -webkit-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+}
+/*Трансформ объектов*/
+.tiltout{
+    -webkit-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+        transition: all 1.5s ease;
+}
+.tiltout:hover{
+    -webkit-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -ms-transform: scale(0.95, 0.95);
+        transform: scale(0.95, 0.95);
+}
+/*Трансформ объектов*/
+.tilt1{
+    -webkit-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+        transition: all 3s ease;
+}
+/*Трансформ объектов*/
+.tilt1:hover{
+    -webkit-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+}
+/*Трансформ объектов*/
+.tilt2{
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+        transition: all 1s ease;
+}
+/*Трансформ объектов*/
+.tilt2:hover{
+    -webkit-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+        transform: scale(1.05, 1.05);
+}
+/*Трансформ объектов*/
+.tilt3{
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+/*Трансформ объектов*/
+.tilt3:hover{
+    -webkit-transform: scale(1.5, 1.5);
+    -o-transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+}
+/*Навбар*/
+.navbar{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 26px;
+    /*background-color: rgba(72, 136, 216, 0.68);*/
+    background-color: rgba(255, 193, 7, 0.85);
+}
+/*Навбар - отступ брэнда*/
+.navbar-collapse{
+    padding-left: 3%;
+}
+/*Навбар - брэнд*/
+.navbar .navbar-brand{
+    padding-left: 1%;
+    color: rgba(41, 0, 51, 0.8);
+    /*font-family: 'Russo One', sans-serif;*/
+    /*font-family: 'Special Elite', cursive;*/
+    /*font-weight: bolder;*/
+    font-size: 28px;
+}
+/*Навбар*/
+.navbar .navbar-brand:hover{
+    text-decoration:underline
+}
+/*Навбар - ссылка*/
+.navbar-light .navbar-nav .active>.nav-link{
+    color: rgb(0, 0, 0);
+}
+/*Навбар - выпадающее меню*/
+.dropdown-menu {
+    background-color: rgba(74, 145, 227, 0.61);
+}
+/*Навбар - итемы для меню*/
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(74, 145, 227, 0.61);
+}
+/*горизонтальная линия - общая*/
+hr{
+    display: block;
+    height: 2px;
+    border:0;
+    border-top: 1px solid #ffffff;
+    margin: 2em 0;
+    padding: 0;
+}
+/*главный контейнер*/
+#headerwrap{
+    background: url("../images/hade.jpg") no-repeat center top;
+    margin-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    width: 100%;
+    cursor: default;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*Секция - jumbotron*/
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba(233, 95, 14, 0.81);
+    border-radius: .5rem;
+}
+/*jumbotron - заголовки*/
+.jumbotron h1 {
+    color: white;
+    font-size: 48px;
+}
+/*Секция - параграфы*/
+.jumbotron p {
+    color: white;
+    font-size: 24px;
+}
+/*Секция - showcase-text*/
+.showcase .showcase-text {
+  padding: 3rem;
+}
+/*Секция - showcase-img для картинок*/
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+/*горизонтальная линия - шоукейс*/
+.showcase hr{
+    display: block;
+    height: 2px;
+    border:0;
+    border-top: 1px solid rgba(233, 95, 14, 0.81);
+    margin: 2em 0;
+    padding: 0;
+}
+/*Секция - партнеры*/
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+/*Секция - партнеры итемы*/
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+/*Секция - партнеры итемы*/
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+/*Секция - партнеры итемы*/
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+/*Секция - партнеры итемы*/
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+/*горизонтальная линия - партнеры*/
+.features-icons hr{
+    display: block;
+    height: 2px;
+    border:0;
+    border-top: 1px solid rgba(233, 95, 14, 0.81);
+    margin: .25em 0;
+    padding: 0;
+}
+/*Главный контейнер для benzovozi*/
+#headerwrap2{
+    /*background: url("../images/wp.png") no-repeat center top;*/
+    background-color: white;
+    margin-top: 71px;
+    padding-top: 10px;
+    text-align: right;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+    cursor: default;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#headerwrap2 h1{
+    color: black;
+}
+/*Подвал сайта*/
+#foo{
+    background-color: rgb(235, 235, 235);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+/*Стили подвал сайта*/
+#foo h1{
+    color: rgba(80, 82, 75, 0.99);
+    font-size: 24px;
+    font-weight: 500;
+    cursor: default;
+}
+/*Стили подвал сайта*/
+#foo p{
+    color: #000000;
+    font-size: 20px;
+}
+/*Стили подвал сайта*/
+#foo p:hover{
+    color: rgba(233, 95, 14, 0.81);
+    font-size: 20px;
+    cursor: default;
+}
+/*Стили подвал сайта*/
+#foo a{
+    color: rgba(233, 95, 14, 0.81);
+    font-size: 28px;
+}
+/*Стили подвал сайта*/
+#foo a:hover{
+    color: rgba(80, 82, 75, 0.99);
+    font-size: 28px;
+    cursor: default;
+}
+/*Стили подвал сайта*/
+#foo label{
+    color: rgba(233, 95, 14, 0.81);
+    font-size: 20px;
+}
+/*Стили подвал сайта*/
+#foo button{
+    width: 40%;
+    background-color: rgba(233, 95, 14, 0.81);
+}
+/*Стили подвал сайта*/
+#foo hr{
+    display: block;
+    height: 2px;
+    border:0;
+    border-top: 1px solid rgba(233, 95, 14, 0.81);
+    margin: 1em 0;
+    padding: 0;
+}
+
+.product-description-tabs{
+    padding: 10px;
+}
+
+.product-image-item{
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.71);
+}
+/*Стили для контейнера-продуктов*/
+.container-product{
+    margin: 100px;
+}
+/*Стили для Product.ID*/
+#container-product-id{
+    padding-top: 105px;
+    background: url("../images/hade_2.jpg") no-repeat center top;
+    margin-top: 100px;
+    /*padding-top: 150px;*/
+    padding-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    width: 100%;
+    cursor: default;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#container-product-id hr{
+   display: block;
+    height: 2px;
+    border:0;
+    border-top: 3px solid #ffc107;
+    margin: 2em 0;
+    padding: 0;
+}
+
+.card{
+    border: 2px solid #ffc107;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.item-property p{
+    font-size: 20px;
+}
+.param-feature p{
+    font-size: 20px;
+}
+.testimonials {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+/*горизонтальная линия - testimonials*/
+.testimonials hr{
+    display: block;
+    height: 2px;
+    border:0;
+    border-top: 1px solid rgba(233, 95, 14, 0.81);
+    margin: .5em 0;
+    padding: 0;
+}
+
+.gallery-wrap .img-big-wrap img {
+    height: 450px;
+    width: auto;
+    display: inline-block;
+    cursor: default;
+}
+
+.gallery-wrap .img-small-wrap .item-gallery {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin: 7px 2px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.gallery-wrap .img-small-wrap {
+    text-align: center;
+}
+.gallery-wrap .img-small-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: zoom-in;
+}
+.bg-secondary {
+    background-color: rgba(108, 117, 125, 0.87) !important;
+}
+#contact{
+    margin-top: 2em;
+    margin-bottom: 3em;
+    min-height: 500px;
+}
+
+#message a
+{
+position: fixed; /* фиксированная позиция */
+    color: #fff; /* цвет текста */
+    background-color: rgba(233, 95, 14, 0.81); /* цвет заднего фона */
+    left: 20px; /* расстояние от правого края */
+    bottom: 0px; /* расстояние от нижнего края */
+    padding: 4px 10px; /* отступы до содержимого блока */
+    font-size: 20px; /* размер шрифта (иконки) */
+    border-top-left-radius: 4px; /* скругление верхнего левого угла */
+    border-top-right-radius: 4px; /* скругление верхнего правого угла */
+    border-bottom-left-radius: 4px; /* скругление нижнего левого угла */
+    border-bottom-right-radius: 4px; /* скругление нижнего правого угла */
+    cursor: pointer; /* форма курсора */
+    display: none; /* не отображать элемент */
+    text-align: center; /*выравнивание содержимого элемента по центру */
+    z-index: 4;
+
+}
+#message a:hover {
+  background-color: #000; /* цвет заднего фона при наведении */
+}
+
+/*главный контейнер*/
+#container-table{
+    /*background: url("../images/hade.jpg") no-repeat center top;*/
+    margin-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+    cursor: default;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#container-table hr{
+    display: block;
+    height: 2px;
+    border:0;
+    border-top: 1px solid rgba(233, 95, 14, 0.81);
+    margin: .5em 0;
+    padding: 0;
+}
+
+#contact hr{
+    display: block;
+    height: 2px;
+    border:0;
+    border-top: 1px solid rgba(233, 95, 14, 0.81);
+    margin: .5em 0;
+    padding: 0;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #e97937;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #e97937;
+}
+
+.pricing {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  border: 3px solid #eee;
+  max-width: 275px;
+  max-height: 700px;
+}
+
+.pricing-active {
+  border: 3px solid #36d7ac;
+  margin-top: -10px;
+  box-shadow: 7px 7px rgba(54, 215, 172, 0.2);
+}
+
+.pricing:hover {
+  border: 3px solid #36d7ac;
+}
+
+.pricing:hover h4 {
+  color: #36d7ac;
+}
+
+.pricing-head {
+  text-align: center;
+}
+
+.pricing-head h3,
+.pricing-head h4 {
+  margin: 0;
+  line-height: normal;
+}
+
+.pricing-head h3 span,
+.pricing-head h4 span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.pricing-head h3 {
+  font-weight: 300;
+  color: #fafafa;
+  padding: 12px 0;
+  font-size: 27px;
+  background: #36d7ac;
+  border-bottom: solid 1px #41b91c;
+}
+
+.pricing-head h4 {
+  color: #bac39f;
+  padding: 5px 0;
+  font-size: 48px;
+  font-weight: 300;
+  background: #fbfef2;
+  border-bottom: solid 1px #f5f9e7;
+}
+
+.pricing-head-active h4 {
+  color: #36d7ac;
+}
+
+.pricing-head h4 i {
+  top: -8px;
+  font-size: 22px;
+  font-style: normal;
+  position: relative;
+}
+
+.pricing-head h4 span {
+  top: -10px;
+  font-size: 18px;
+  font-style: normal;
+  position: relative;
+}
+
+/*Pricing Content*/
+.pricing-content li {
+  color: #393939;
+  font-size: 18px;
+  text-align: center;
+  padding: 7px 15px;
+  border-bottom: solid 1px #f5f9e7;
+
+}
+
+/*Pricing Footer*/
+.pricing-footer {
+  color: #774b46;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  padding: 0 20px 19px;
+}
+
+/*Priceing Active*/
+.price-active,
+.pricing:hover {
+  z-index: 9;
+}
+
+.price-active h4 {
+  color: #36d7ac;
+}
+
+.no-space-pricing .pricing:hover {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.no-space-pricing .price-active .pricing-head h4,
+.no-space-pricing .pricing:hover .pricing-head h4 {
+  color: #36d7ac;
+  padding: 15px 0;
+  font-size: 80px;
+  transition: color 0.5s ease-in-out;
+}
+
+.yellow-crusta.btn {
+  color: #FFFFFF;
+  background-color: #f3c200;
+}
+.yellow-crusta.btn:hover,
+.yellow-crusta.btn:focus,
+.yellow-crusta.btn:active,
+.yellow-crusta.btn.active {
+    color: #FFFFFF;
+    background-color: #cfa500;
+}
