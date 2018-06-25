@@ -1,6 +1,6 @@
 DEBUG = False
 ALLOWED_HOSTS = ['207.154.255.208',
-                 '.maslosbit.ru']
+                 '.maslo-sbit.ru']
 
 
 DATABASES = {
